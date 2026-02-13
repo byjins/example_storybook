@@ -1,0 +1,120 @@
+.select-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1;
+  gap: 8px;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-bg-tertiary);
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+  height: 36px;
+}
+
+.select-trigger:hover:not(:disabled) {
+  border-color: var(--color-button-primary-bg);
+}
+
+.select-trigger:focus {
+  outline: none;
+  border-color: var(--color-button-primary-bg);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.select-trigger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.select-trigger[data-placeholder] {
+  color: var(--color-text-tertiary);
+}
+
+.select-value {
+  flex: 1;
+  text-align: left;
+}
+
+.select-icon {
+  color: var(--color-text-tertiary);
+  transition: transform 0.2s;
+}
+
+.select-trigger[data-state="open"] .select-icon {
+  transform: rotate(180deg);
+}
+
+.select-content {
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+  border-radius: 6px;
+  border: 1px solid var(--color-bg-tertiary);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  min-width: var(--radix-select-trigger-width);
+  max-height: var(--radix-select-content-available-height);
+}
+
+.select-viewport {
+  padding: 4px;
+}
+
+.select-item {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 8px;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.select-item[data-disabled] {
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.select-item[data-highlighted] {
+  outline: none;
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.select-item-indicator {
+  position: absolute;
+  left: 8px;
+  width: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-button-primary-bg);
+}
+
+.select-label {
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.select-group {
+  padding: 4px 0;
+}
+
+.select-separator {
+  height: 1px;
+  background-color: var(--color-bg-tertiary);
+  margin: 4px 0;
+}

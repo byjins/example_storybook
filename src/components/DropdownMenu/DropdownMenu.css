@@ -1,0 +1,156 @@
+.dropdown-menu-trigger {
+  outline: none;
+}
+
+.dropdown-menu-content {
+  min-width: 220px;
+  background-color: var(--color-bg-primary);
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-bg-tertiary);
+  z-index: 2147483647;
+}
+
+.dropdown-menu-item {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 8px;
+  position: relative;
+  padding-left: 24px;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  outline: none;
+}
+
+.dropdown-menu-item[data-disabled] {
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dropdown-menu-item[data-highlighted] {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.dropdown-menu-item-shortcut {
+  margin-left: auto;
+  padding-left: 20px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--color-text-tertiary);
+}
+
+.dropdown-menu-label {
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.dropdown-menu-group {
+  padding: 4px 0;
+}
+
+.dropdown-menu-separator {
+  height: 1px;
+  background-color: var(--color-bg-tertiary);
+  margin: 4px;
+}
+
+.dropdown-menu-checkbox-item,
+.dropdown-menu-radio-item {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 8px;
+  position: relative;
+  padding-left: 24px;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  outline: none;
+}
+
+.dropdown-menu-checkbox-item[data-disabled],
+.dropdown-menu-radio-item[data-disabled] {
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dropdown-menu-checkbox-item[data-highlighted],
+.dropdown-menu-radio-item[data-highlighted] {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.dropdown-menu-item-indicator {
+  position: absolute;
+  left: 8px;
+  width: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-button-primary-bg);
+}
+
+.dropdown-menu-radio-group {
+  padding: 4px 0;
+}
+
+@keyframes slideDownAndFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpAndFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAndFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightAndFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
