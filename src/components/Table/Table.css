@@ -1,0 +1,115 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border, #e5e7eb);
+  background: var(--color-background, #ffffff);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.table-header {
+  background: var(--color-surface, #f9fafb);
+  border-bottom: 2px solid var(--color-border, #e5e7eb);
+}
+
+.table-header-row {
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+}
+
+.table-header-cell {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text-primary, #111827);
+  white-space: nowrap;
+}
+
+.table-header-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-header-content.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.table-header-content.sortable:hover {
+  color: var(--color-primary, #3b82f6);
+}
+
+.sort-indicator {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #6b7280);
+}
+
+.table-body {
+  background: var(--color-background, #ffffff);
+}
+
+.table-row {
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  transition: background-color 0.15s ease;
+}
+
+.table-row:hover {
+  background: var(--color-surface-hover, #f3f4f6);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  padding: 0.75rem 1rem;
+  color: var(--color-text-primary, #111827);
+}
+
+.table-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-secondary, #6b7280);
+}
+
+.table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid var(--color-border, #e5e7eb);
+  background: var(--color-surface, #f9fafb);
+}
+
+.table-pagination-button {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 4px;
+  background: var(--color-background, #ffffff);
+  color: var(--color-text-primary, #111827);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+}
+
+.table-pagination-button:hover:not(:disabled) {
+  background: var(--color-surface-hover, #f3f4f6);
+  border-color: var(--color-primary, #3b82f6);
+}
+
+.table-pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.table-pagination-info {
+  margin: 0 0.5rem;
+  color: var(--color-text-secondary, #6b7280);
+  font-size: 0.875rem;
+}

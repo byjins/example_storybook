@@ -1,0 +1,71 @@
+.component-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.component-page-header {
+  margin-bottom: 2rem;
+}
+
+.component-page-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary, #111827);
+}
+
+.component-page-header p {
+  font-size: 1rem;
+  color: var(--color-text-secondary, #6b7280);
+}
+
+.component-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.component-section {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 8px;
+  background: var(--color-background, #ffffff);
+}
+
+.component-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary, #111827);
+}
+
+.component-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.selected-value,
+.click-result,
+.action-result {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--color-surface, #f9fafb);
+  border-radius: 4px;
+  color: var(--color-text-primary, #111827);
+  font-size: 0.875rem;
+}
+
+.dialog-content-wrapper {
+  padding: 1rem 0;
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.custom-button {
+  border: none !important;
+}
